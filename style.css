@@ -78,6 +78,8 @@ header{
     font-size: 12px;
     padding: 32px 20px;
     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .main a:hover{
     color: var(--white);
