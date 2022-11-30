@@ -15,9 +15,10 @@
     --darker-blue: #000894;
 }
 body{
-    min-height: 100vh;
+    min-height: 1500px;
     background-color: var(--bg-color);
     color: var(--black);
+    overflow: overlay;
 }
 header{
     position: fixed;
@@ -42,9 +43,9 @@ header{
 }
 .navbar a{
     color: var(--text-color);
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     font-weight: 500;
-    padding: 5px 0;
+    padding: 5px 0px;
     margin: 0px 30px;
     transition: all .50s ease;
 }
@@ -75,7 +76,7 @@ header{
     height: 32px;
 }
 .button span{
-    font-size: 12px;
+    font-size: 14px;
     padding: 32px 20px;
     white-space: nowrap;
     overflow: hidden;
@@ -149,7 +150,7 @@ header{
         right: -100%;
         width: 270px;
         height: 29vh;
-        background: var(--darker-blue);
+        background: var(--bg-color);
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -159,18 +160,17 @@ header{
     }
     .navbar a{
         display: block;
-        color: var(--white);
+        color: var(--black);
         margin: 12px 0;
         padding: 0 25px;
         transition: all .50s ease;
     }
     .navbar a:hover{
-        color: var(--white);
+        color: var(--main-color);
         transform: translateY(5px);
     }
     .navbar a.active{
-        color: var(--text-color);
-        color: var(--white);
+        color: var(--main-color);
     }
     .navbar.open{
         right: 2%;
@@ -189,12 +189,12 @@ header{
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: transparent;
   }
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: var(--darker-blue);
+    background: #151515dd;
     border-radius: 20px;
   }
   
