@@ -176,7 +176,11 @@ header{
         right: 2%;
     }
 }
-
+@media (max-width: 400px){
+    .button{
+        display: none;
+    }
+}
 /*CUSTOM SCROLL*/
 /* width */
 ::-webkit-scrollbar {
