@@ -8,24 +8,24 @@ controls.forEach((control) => {
     isLeft = e.target.classList.contains("arrow-left");
 
     if (isLeft) {
-      currentItem -= 1;
+      currentItem -= 3;
     } else {
-      currentItem += 1;
+      currentItem += 3;
     }
 
-    if (currentItem >= maxItems) {
+    if (currentItem >= maxItems -1) {
       currentItem = 0;
     }
 
     if (currentItem < 0) {
-      currentItem = maxItems - 1;
+      currentItem = maxItems - 4;
     }
 
     items.forEach((item) => item.classList.remove("current-item"));
 
     items[currentItem].scrollIntoView({
       behavior: "smooth",
-      inline: "start"
+      inline: "start",
     });
 
     items[currentItem].classList.add("current-item");

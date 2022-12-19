@@ -30,7 +30,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: var(--white);
+    background: var(--bg-color);
     padding: 28px 12%;
     transition: all .50s ease;
 } 
@@ -223,9 +223,9 @@ header{
     line-height: 250px;
     width: 40px;
     text-align: center;
-    color: #fff;
-    background: linear-gradient(to left, transparent 0%, black 200%);
-    opacity: 0.1;
+    color: black;
+    background: linear-gradient(to left, transparent 0%, var(--main-color) 200%);
+    opacity: 0.5;
     border: 0px;
     transition: all 600ms ease-in-out;
     border-top-left-radius: 18px;
@@ -259,7 +259,7 @@ header{
     height: 318px;
     flex-shrink: 0;
     border-radius: 18px;
-    opacity: 0.5;
+    opacity: 1;
     transition: all 600ms ease-in-out;
     z-index: 1;
 }
@@ -267,7 +267,7 @@ header{
     opacity: 1;
 }
 .current-item{
-    box-shadow: 0 0 10px #000894;
+    /* box-shadow: 0 0 10px #000894; */
     opacity: 1;
 
 }
