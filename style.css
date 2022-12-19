@@ -347,9 +347,17 @@ header{
         display: none;
     }
 }
-@media (max-width: 400px){
-    .button{
-        display: none;
+@media (max-width: 410px){
+
+    .container{
+        position: relative;
+        padding: 15px;
+        max-width: 300px;
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+    .item{
+        height: 180px;
     }
 }
 /*CUSTOM SCROLL*/
