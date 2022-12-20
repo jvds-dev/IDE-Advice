@@ -1,0 +1,17 @@
+// window.onscroll = function() {scrollFunction()};
+
+// function scrollFunction() {
+//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//     document.getElementById("navbar").style.top = "0";
+//   } else {
+//     document.getElementById("navbar").style.top = "-50px";
+//   }
+// }
+
+// function scrollOnHover(){
+//     document.getElementById("navbar").style.top = "0";
+// }
+
+function scrollToObject(id){
+    object = document.getElementById(id).scrollIntoView({behavior: "smooth", block: "center"});
+}

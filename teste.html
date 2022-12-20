@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div><h1>LISTA</h1></div>
+    <div>
+        <ul>
+            <li>TESTE1</li>
+            <li>TESTE2</li>
+            <li>TESTE3</li>
+            <li>TESTE4</li>
+            <li>TESTE5</li>
+        </ul>
+    </div>
+    <div>
+        <button id="btn">clique aqui</button>
+    </div>
+    <script>
+        $('#btn').on('click', botao)
+        function botao(){
+            $('h1').remove()
+        }
+
+    </script>
+</body>
+</html>
