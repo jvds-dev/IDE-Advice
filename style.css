@@ -13,7 +13,8 @@
     --black: #101010;
     --main-color: #0736f9;
     --darker-blue: #000894;
-    --gray: #d9d8d8;
+    --gray: #f3f2f3;
+    /* --gray: #d9d8d8; */
 }
 body{
     min-height: 1500px;
