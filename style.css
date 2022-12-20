@@ -63,12 +63,17 @@ header{
     align-items: center;
 }
 .main a{
+    display: flex;
     margin-right: 25px;
     margin-left: 10px;
     color: var(--bg-color);
     font-size: 1.1rem;
     font-weight: 500;
     transition: all .50s ease;
+}
+.main img{
+    padding-right: 10px;
+    height: 15px;
 }
 .button{
     display: flex;
@@ -181,9 +186,12 @@ header{
     margin: 20px;
     cursor: pointer;
     transition: all 0.5s ease-in-out;
+
+    box-shadow: 1px 1px 15px var(--black);
 }
 #third .boxes .box:hover{
     background: var(--main-color);
+    transform: translateY(-10px);
 }
 #third .boxes .box h2{
     justify-content: center;
@@ -345,6 +353,18 @@ header{
 #footer img{
     filter: var(--bg-color);
 }
+
+
+/* .animate {
+    opacity: 0;
+    transform: translate3d(-100px, 0, 0);
+    transition: .3s;
+}
+.animate-start{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+} */
+
 
 
 @media (max-width: 1280px){
