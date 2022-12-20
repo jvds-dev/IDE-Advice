@@ -13,6 +13,7 @@
     --black: #101010;
     --main-color: #0736f9;
     --darker-blue: #000894;
+    --gray: #d9d8d8;
 }
 body{
     min-height: 1500px;
@@ -122,7 +123,7 @@ header{
     font-size: 15px;
 }
 
-.c-two{
+#second{
     margin-top: 0;
     background: var(--bg-color);
     display: flex;
@@ -132,13 +133,13 @@ header{
     margin-bottom: 32px;
     height: auto;
 }
-.c-two .title{
+#second .title{
     align-items: center;
     justify-content: center;
     max-width: 77%;
     width: 77%;
 }
-.c-two .title h2{
+#second .title h2{
     margin-top: 35px;
     font-size: 2rem;
     font-weight: 600;
@@ -147,7 +148,7 @@ header{
     text-justify: inter-word;
     color: var(--main-color);
 }
-.c-two .text{
+#second .text{
     margin-top: 35px;
     text-align: center;
     text-justify: inter-word;
@@ -157,33 +158,69 @@ header{
     color: #333333;
 }
 
-.c-three{
+#third{
     background: #f3f2f3;
-    min-height: 265px;
+}
+#third .boxes{
+    background: var(--bg-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+#third .boxes .box{
+    background: var(--gray);
+    width: 400px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+#third .boxes .box:hover{
+    background: var(--main-color);
+}
+#third .boxes .box h2{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-justify: inter-word;
+    font-size: 40px;
+    padding-top: 10px;
+    color: var(--main-color);
+    transition: all 0.5s ease-in-out;
+}
+#third .boxes .box:hover h2{
+    color: white;
 }
 
-/* .c-four{
+#services{
+    background: var(--gray);
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 10px;
+    justify-content: center;
+    flex-direction: column;
 }
-.c-four .title{
+#services .title{
     align-items: center;
     justify-content: center;
     max-width: 77%;
     width: 77%;
 }
-.c-four .title h2{
+#services .title h2{
     margin-top: 35px;
     font-size: 2rem;
     font-weight: 600;
     line-height: 34px;
     text-align: center;
     text-justify: inter-word;
-    color: var(--main-color);
+    color: var(--black);
 }
-.c-four .text{
+#services .text{
     margin-top: 35px;
     text-align: center;
     text-justify: inter-word;
@@ -191,46 +228,20 @@ header{
     max-width: 70%;
     width: 70%;
     color: #333333;
-} */
-
-
-.c-four{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
 }
-.c-four .title{
-    align-items: center;
-    justify-content: center;
-    max-width: 77%;
-    width: 77%;
-}
-.c-four .title h2{
-    margin-top: 35px;
-    font-size: 2rem;
-    font-weight: 600;
-    line-height: 34px;
-    text-align: center;
-    text-justify: inter-word;
-    color: var(--main-color);
-}
-.c-four .text{
-    margin-top: 35px;
-    text-align: center;
-    text-justify: inter-word;
-    line-height: 24px;
-    max-width: 70%;
-    width: 70%;
-    color: #333333;
-}
-
 .container{
+    padding: 25px;
+    margin: 20px;
     width: 1060px;
 }
 .gallery img{
     padding: 5px;
     border-radius: 18px;
+    transition: all 0.2s ease-in-out;
+}
+.gallery img:hover{
+    transform: scale(1.05);
+    border-radius: 10px;
 }
 
 .slick-prev:before{
@@ -239,18 +250,99 @@ header{
 .slick-next:before{
     color: var(--main-color);
 }
+#quote {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+#quote .quoteBlock{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+#quote .quoteBlock h2{
+    font-size: 28px;
+    font-weight: bolder;
+    text-align: center;
+    text-justify: inter-word;
+}
+
+#portfolio {
+    background: var(--gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 400px;
+}
+#portfolio .portBlock{
+    padding: 20px;
+}
+#portfolio .portBlock h2{
+    text-align: center;
+    text-justify: inter-word;
+    margin: 20px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: var(--black);
+
+}
+#portfolio .portBlock p{
+    background: var(--main-color);
+    text-align: center;
+    text-justify: inter-word;
+    margin-top: 100px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+#portfolio .portBlock p:hover{
+    transform: scale(1.1);
+}
+
 
 
 #contact {
-    width: 100%;
     height: 200px;
-    background: green;
+    background: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+#contact .form{
+    padding: 20px;
+}
+#contact .form h2{
+    text-align: center;
+    text-justify: inter-word;
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--bg-color);
+
+}
+#contact .form p{
+    text-align: center;
+    text-justify: inter-word;
 }
 
 #footer {
+    display: flex;
     width: 100%;
-    height: 200px;
-    background: red;
+    height: 120px;
+    background: #000;
+    justify-content: center;
+    align-items: center;
+}
+#footer .foot{
+    padding: 20px;
+}
+#footer img{
+    filter: var(--bg-color);
 }
 
 
@@ -264,17 +356,7 @@ header{
         margin: 0 20px;
     }
 }
-
-@media (max-width: 1120px){
-    .container{
-        position: relative;
-        padding: 15px;
-        max-width: 800px;
-        margin: 0 auto;
-    }
-}
-
-@media (max-width: 1090px){
+@media (max-width: 1080px){
     .navbar{
         border-bottom-right-radius: 10px;
         border-bottom-left-radius: 10px;
@@ -287,21 +369,23 @@ header{
         padding: 0 25px;
         transition: all .50s ease;
     }
+    .container{
+        max-width: 800px;
+    }
 }
 @media (max-width: 800px){
     .container{
-        position: relative;
-        padding: 15px;
         max-width: 600px;
-        margin: 0 auto;
     }
 }
-@media (max-width: 610px){
-    .container{
-        position: relative;
-        padding: 15px;
-        max-width: 400px;
-        margin: 0 auto;
+@media (max-width: 790px){
+    #third .boxes .box{
+        width: 300px;
+        height: 150px;
+    }
+    #third .boxes .box h2{
+        padding-top: 0px;
+        font-size: 30px;
     }
 }
 @media (max-width: 720px){
@@ -309,16 +393,51 @@ header{
         display: none;
     }
 }
-@media (max-width: 410px){
-
-    .container{
-        position: relative;
-        padding: 15px;
-        max-width: 300px;
-        margin: 0 auto;
-        overflow-x: hidden;
+@media (max-width: 690px){
+    #third .boxes .box{
+        width: 150px;
+        height: 150px;
+        padding: 0px;
+        margin: 5px;
+    }
+    #third .boxes .box h2{
+        padding-top: 50px;
+        font-size: 30px;
     }
 }
+@media (max-width: 600px){
+    .container{
+        max-width: 400px;
+    }
+}
+@media (max-width: 500px){
+    #third .boxes{
+        flex-direction: column;
+    }
+    #third .boxes .box{
+        width: 100%;
+        height: 80px;
+        padding: 0px;
+        margin: 5px;
+    }
+    #third .boxes .box h2{
+        padding-top: 15px;
+        font-size: 30px;
+    }
+}
+@media (max-width: 400px){
+    .container{
+        max-width: 300px;
+    }
+    
+}
+@media (max-width: 345px){
+    .container{
+        max-width: 250px;
+    }
+}
+
+
 /*CUSTOM SCROLL*/
 /* width */
 ::-webkit-scrollbar {
@@ -333,7 +452,7 @@ header{
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #151515dd;
-    border-radius: 20px;
+    /* border-radius: 20px; */
   }
   
   /* Handle on hover */
