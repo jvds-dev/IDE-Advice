@@ -13,5 +13,5 @@
 // }
 
 function scrollToObject(id){
-    object = document.getElementById(id).scrollIntoView({behavior: "smooth", block: "center"});
+    object = document.getElementById(id).scrollIntoView({behavior: "auto", block: "center"});
 }
