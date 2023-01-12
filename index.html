@@ -97,7 +97,25 @@
     <section id="contact">
         <div class="form">
             <h2>Formulário</h2>
-            <p>--- --- ---</p>
+            <form action="https://api.sheetmonkey.io/form/cbVGG4q6eUjud1QjRvuXAL" method="post">
+                <fieldset>
+                    <div class="inputBox">
+                        <input type="text" name="name" id="name" class="inputUser" required>
+                        <label for="nome" class="labelInput">Nome completo</label>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" name="email" id="email" class="inputUser" required>
+                        <label for="email" class="labelInput">Email</label>
+                    </div>
+                    <div class="inputBox">
+                        <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                        <label for="telefone" class="labelInput">Telefone</label>
+                    </div>
+                    <div class="buttonBox">
+                        <button type="submit" name="submit" id="submit">Enviar</button>
+                    </div>
+                </fieldset>
+            </form>
         </div>
     </section>
     <section id="footer">
@@ -106,17 +124,9 @@
         </div>
     </section>
 
-    <script>
-        $('.gallery').slick({
-            infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 3
-        });
-    </script>
-
     <script src="lib/slick/slick.js"></script>
     <script src="js/header.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/slider.js"></script>
     
 </body>
 </html>
